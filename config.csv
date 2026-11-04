@@ -1,2 +1,11 @@
-
-config.csv 
+key,value
+company_name,BOUHAFS LAREDJ
+company_type,Personne physique
+country,Algeria
+currency,DZD
+accounting_system,SCF
+language,ar
+secondary_language,fr
+direction,rtl
+fiscal_year_start,01-01
+timezone,Africa/Algiers
