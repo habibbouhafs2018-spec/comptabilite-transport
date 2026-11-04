@@ -1,1 +1,52 @@
 
+
+code,parent,type,reconcilable,name,sequence
+1,,equity,false,رؤوس الحسابات,1
+10,1,equity,false,رأس المال والاحتياطيات,10
+101,10,equity,false,رأس المال,11
+108,10,equity,false,حساب صاحب المؤسسة,12
+11,1,equity,false,الترحيل من جديد,13
+12,1,equity,false,نتيجة السنة المالية,14
+2,,asset_fixed,false,الأصول الثابتة,20
+20,2,asset_fixed,false,الأصول غير الملموسة,21
+21,2,asset_fixed,false,الأصول الثابتة الملموسة,22
+218,21,asset_fixed,false,معدات النقل,23
+2182,218,asset_fixed,false,الشاحنات والمقطورات,24
+3,,asset_current,false,المخزونات,30
+30,3,asset_current,false,المخزونات,31
+4,,liability_current,false,حسابات الغير,40
+40,4,liability_payable,false,الموردون,41
+401,40,liability_payable,true,الموردون,42
+41,4,asset_receivable,false,العملاء,43
+411,41,asset_receivable,true,عملاء خدمات النقل,44
+42,4,liability_current,false,المستخدمون,45
+421,42,liability_current,true,أجور السائقين المستحقة,46
+425,42,asset_current,false,عهد وتسبيقات السائقين,47
+425001,425,asset_current,true,عهدة السائق الأول,48
+425002,425,asset_current,true,عهدة السائق الثاني,49
+425003,425,asset_current,true,عهدة السائق الثالث,50
+43,4,liability_current,false,الضمان الاجتماعي,51
+44,4,liability_current,false,الدولة والضرائب,52
+5,,asset_cash,false,الحسابات المالية,60
+51,5,asset_cash,false,البنوك,61
+512,51,asset_cash,true,الحساب البنكي,62
+53,5,asset_cash,false,الصندوق,63
+530,53,asset_cash,false,الصندوق الرئيسي,64
+6,,expense,false,الأعباء,70
+60,6,expense_direct_cost,false,المشتريات المستهلكة,71
+61,6,expense,false,الخدمات الخارجية,72
+615,61,expense,false,صيانة وإصلاح الشاحنات,73
+616,61,expense,false,تأمين الشاحنات,74
+62,6,expense,false,مصاريف النقل والطرق,75
+624,62,expense,false,مصاريف الطرق والعبور,76
+625,62,expense,false,السفر والمهمات,77
+63,6,expense,false,أعباء المستخدمين,78
+631,63,expense,false,أجور السائقين,79
+64,6,expense,false,الضرائب والرسوم,80
+65,6,expense,false,مصاريف تشغيلية أخرى,81
+66,6,expense,false,الأعباء المالية,82
+68,6,expense_depreciation,false,الإهتلاكات,83
+7,,income,false,الإيرادات,90
+70,7,income,false,إيرادات النشاط,91
+706,70,income,false,إيرادات نقل البضائع,92
+75,7,income_other,false,إيرادات أخرى,93
